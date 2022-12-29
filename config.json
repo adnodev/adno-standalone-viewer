@@ -1,0 +1,8 @@
+{
+	"autorun_onload":false,
+	"autorun_interval": 4,
+	"hide_toolbar": false,
+        "additionalinfo": "additionalinfo",
+	"fullpage": false,
+	"hide_annocontrols": true
+}

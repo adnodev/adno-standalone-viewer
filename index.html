@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Adno standalone viewer</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://ncsu-libraries.github.io/annona/dist/annona.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+  </head>
+  <body>
+    <h1 id="title"></h1>
+    <p id="infos"></p>
+    <div id="additionalinfo" title="Adno information"></div>
+    <script src="script.js"></script>
+    <script id="config" type="application/json"></script>
+    <script id="items" type="application/json"></script>
+    <iiif-storyboard annotationurl="items"></iiif-storyboard>
+    <script src="https://ncsu-libraries.github.io/annona/dist/annona.js"></script>
+  </body>
+</html>
