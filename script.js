@@ -6,7 +6,9 @@ $.ajax({
 async:false
 });
 
-$.getJSON('annotations.json', function(data){
+var getannos = $.getJSON('annotations.json');
+
+getannos.done(function(data){
 
 	settings["title"] = data.title;
 
@@ -21,6 +23,7 @@ $.getJSON('annotations.json', function(data){
 		if (data.creator) infos += `${data.creator} (creator), `;
 		if (data.editor) infos += `${data.editor} (editor), `;
 		if (data.rights) infos += `${data.rights}`;
+		infos += `<button onclick = "downloadFile()">annotations URL </button>`;
 		$("#infos").html(infos);
 		$("#additionalinfo").html(infos);
 	}
